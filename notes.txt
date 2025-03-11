@@ -1,0 +1,6 @@
+https://apple.stackexchange.com/questions/471886/how-to-replace-functionality-of-deprecated-airport-command-line-application
+
+system_profiler SPAirPortDataType | awk '/Other Local Wi-Fi Networks:/,/awdl0:/' | awk '!/Other Local Wi-Fi Networks:/ && !/awdl0:/' | grep ':$' | sed 's/:$//' | sed 's/^[ \t]*//'
+
+
+system_profiler SPAirPortDataType

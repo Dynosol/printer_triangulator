@@ -1,0 +1,244 @@
+{
+  "timestamp": "2025-03-12T19:25:56",
+  "networks": [
+    {
+      "interface": "en0",
+      "currentNetwork": {
+        "_name": "Harvard Secure",
+        "spairport_network_channel": "149 (5GHz, 20MHz)",
+        "spairport_network_country_code": "US",
+        "spairport_network_mcs": 11,
+        "spairport_network_phymode": "802.11ax",
+        "spairport_network_rate": 286,
+        "spairport_network_type": "spairport_network_type_station",
+        "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+        "spairport_signal_noise": "-66 dBm / -97 dBm"
+      },
+      "availableNetworks": [
+        {
+          "_name": "Harvard IoT",
+          "spairport_network_channel": "132 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_personal",
+          "spairport_signal_noise": "-74 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard IoT",
+          "spairport_network_channel": "36 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_personal",
+          "spairport_signal_noise": "-82 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard IoT",
+          "spairport_network_channel": "1 (2GHz, 20MHz)",
+          "spairport_network_phymode": "802.11g/n/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_personal",
+          "spairport_signal_noise": "-67 dBm / -91 dBm"
+        },
+        {
+          "_name": "Harvard IoT",
+          "spairport_network_channel": "157 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_personal",
+          "spairport_signal_noise": "-90 dBm / -96 dBm"
+        },
+        {
+          "_name": "Harvard Passpoint",
+          "spairport_network_channel": "140 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-71 dBm / -96 dBm"
+        },
+        {
+          "_name": "Harvard Passpoint",
+          "spairport_network_channel": "64 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-70 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard Passpoint",
+          "spairport_network_channel": "165 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-70 dBm / -96 dBm"
+        },
+        {
+          "_name": "Harvard Passpoint",
+          "spairport_network_channel": "149 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-64 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard Passpoint",
+          "spairport_network_channel": "116 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-66 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard Secure",
+          "spairport_network_channel": "149 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-63 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard Secure",
+          "spairport_network_channel": "11 (2GHz, 20MHz)",
+          "spairport_network_phymode": "802.11g/n/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-66 dBm / -94 dBm"
+        },
+        {
+          "_name": "Harvard Secure",
+          "spairport_network_channel": "64 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-70 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard Secure",
+          "spairport_network_channel": "165 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-70 dBm / -96 dBm"
+        },
+        {
+          "_name": "Harvard Secure",
+          "spairport_network_channel": "116 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-66 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard Secure",
+          "spairport_network_channel": "140 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-71 dBm / -96 dBm"
+        },
+        {
+          "_name": "Harvard University",
+          "spairport_network_channel": "149 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_none",
+          "spairport_signal_noise": "-64 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard University",
+          "spairport_network_channel": "116 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_none",
+          "spairport_signal_noise": "-66 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard University",
+          "spairport_network_channel": "64 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_none",
+          "spairport_signal_noise": "-70 dBm / -97 dBm"
+        },
+        {
+          "_name": "Harvard University",
+          "spairport_network_channel": "1 (2GHz, 20MHz)",
+          "spairport_network_phymode": "802.11g/n/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_none",
+          "spairport_signal_noise": "-67 dBm / -91 dBm"
+        },
+        {
+          "_name": "Harvard University",
+          "spairport_network_channel": "165 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_none",
+          "spairport_signal_noise": "-70 dBm / -96 dBm"
+        },
+        {
+          "_name": "Harvard University",
+          "spairport_network_channel": "140 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_none",
+          "spairport_signal_noise": "-71 dBm / -96 dBm"
+        },
+        {
+          "_name": "eduroam",
+          "spairport_network_channel": "40 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-69 dBm / -97 dBm"
+        },
+        {
+          "_name": "eduroam",
+          "spairport_network_channel": "165 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-70 dBm / -96 dBm"
+        },
+        {
+          "_name": "eduroam",
+          "spairport_network_channel": "104 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-76 dBm / -97 dBm"
+        },
+        {
+          "_name": "eduroam",
+          "spairport_network_channel": "11 (2GHz, 20MHz)",
+          "spairport_network_phymode": "802.11g/n/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-79 dBm / -94 dBm"
+        },
+        {
+          "_name": "eduroam",
+          "spairport_network_channel": "132 (5GHz, 20MHz)",
+          "spairport_network_phymode": "802.11a/n/ac/ax",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_enterprise",
+          "spairport_signal_noise": "-74 dBm / -97 dBm"
+        },
+        {
+          "_name": "iPhone (113)",
+          "spairport_network_channel": "6 (2GHz, 20MHz)",
+          "spairport_network_phymode": "802.11b/g/n",
+          "spairport_network_type": "spairport_network_type_station",
+          "spairport_security_mode": "spairport_security_mode_wpa2_personal",
+          "spairport_signal_noise": "-69 dBm / -91 dBm"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "city": "Cambridge",
+    "region": "Massachusetts",
+    "country": "US",
+    "loc": "42.3751,-71.1056",
+    "timezone": "America/New_York"
+  }
+}

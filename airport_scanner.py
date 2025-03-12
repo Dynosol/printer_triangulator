@@ -6,6 +6,7 @@ import sys
 import logging
 import datetime
 import os
+import time
 
 # Setup logging configuration.
 logging.basicConfig(
@@ -79,10 +80,53 @@ def reorganize_data(data):
     
     return result
 
-def main():
-    # Define output file path in the current directory
-    output_file = "./airport_data.json"
-    
+def get_network_data():
+    """
+    Extract only network-related data (current network and available networks).
+    Returns a simplified JSON with just the network information.
+    """
+    logger.info("Getting network data...")
+    command = ["system_profiler", "-xml", "SPAirPortDataType"]
+
+    try:
+        result = subprocess.run(
+            command, capture_output=True, text=True, check=True
+        )
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Error running command: {e}")
+        return None
+
+    try:
+        plist_data = plistlib.loads(result.stdout.encode("utf-8"))
+        full_data = reorganize_data(plist_data)
+        
+        # Extract only the network information
+        network_data = {
+            "timestamp": full_data["metadata"]["timestamp"],  # This is likely a datetime object
+            "networks": []
+        }
+        
+        for interface in full_data.get("wirelessInterfaces", []):
+            if interface.get("name") == "en0":  # Main WiFi interface
+                interface_info = {
+                    "interface": interface.get("name"),
+                    "currentNetwork": interface.get("currentNetwork", {}),
+                    "availableNetworks": interface.get("availableNetworks", [])
+                }
+                network_data["networks"].append(interface_info)
+                break  # We typically only care about the main interface
+                
+        return network_data
+        
+    except Exception as e:
+        logger.error(f"Error extracting network data: {e}")
+        return None
+
+def collect_airport_data(output_file="./airport_data.json"):
+    """
+    Collect AirPort data and save to a JSON file.
+    Returns the collected data as a dictionary.
+    """
     logger.info("Starting system profiler command...")
     command = ["system_profiler", "-xml", "SPAirPortDataType"]
 
@@ -93,7 +137,7 @@ def main():
         logger.info("System profiler command executed successfully.")
     except subprocess.CalledProcessError as e:
         logger.error(f"Error running command: {e}")
-        sys.exit(1)
+        return None
 
     logger.info("Parsing the XML output into a Python data structure...")
     try:
@@ -101,21 +145,21 @@ def main():
         logger.info("Plist parsing successful.")
     except Exception as e:
         logger.error(f"Error parsing plist data: {e}")
-        sys.exit(1)
+        return None
     
     logger.info("Reorganizing data for better readability...")
     try:
         reorganized_data = reorganize_data(plist_data)
     except Exception as e:
         logger.error(f"Error reorganizing data: {e}")
-        sys.exit(1)
+        return None
 
     logger.info("Converting data structure to JSON format...")
     try:
         json_data = json.dumps(reorganized_data, indent=2, default=custom_serializer)
     except Exception as e:
         logger.error(f"Error converting data to JSON: {e}")
-        sys.exit(1)
+        return None
 
     logger.info(f"Writing JSON data to {output_file}...")
     try:
@@ -124,7 +168,27 @@ def main():
         logger.info(f"JSON data successfully written to {output_file}")
     except Exception as e:
         logger.error(f"Error writing to file: {e}")
-        sys.exit(1)
+        return None
+    
+    return reorganized_data
+
+def run_continuously(interval=60, output_file="./airport_data.json"):
+    """
+    Run the data collection continuously at the specified interval (in seconds).
+    """
+    logger.info(f"Starting continuous monitoring with {interval}s interval")
+    try:
+        while True:
+            collect_airport_data(output_file)
+            logger.info(f"Waiting {interval} seconds until next collection...")
+            time.sleep(interval)
+    except KeyboardInterrupt:
+        logger.info("Continuous monitoring stopped by user")
+    except Exception as e:
+        logger.error(f"Error in continuous monitoring: {e}")
+
+def main():
+    collect_airport_data()
 
 if __name__ == "__main__":
     main()

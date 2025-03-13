@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airportcli"
+version = "0.1.0"
+description = "A replacement tool for AirPort wireless on macOS / OS X."
+readme = "README.md"
+authors = [{ name = "Sol Kim", email = "sol.evergreen@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["airport", "wifi", "network", "scanner"]
+dependencies = [
+    "requests>=2.25.1",
+]
+
+[project.scripts]
+airportcli = "airportcli.cli:cli"
